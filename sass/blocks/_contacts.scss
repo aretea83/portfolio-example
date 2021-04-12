@@ -1,0 +1,94 @@
+.contacts {
+    padding: 120px 0 90px 0;
+    &__wrapper {
+        padding: 0 35px 0 50px;
+        display: grid;
+        grid-template-columns: 400px 585px;
+        gap: 68px;
+    }
+    &__descr {
+        padding-top: 6px;
+        .divider {
+            margin: 0;
+        }
+    }
+    &__subtitle {
+        position: relative;
+        padding: 1px 0 0 12px;
+        @include before_circle;
+    }
+    &__text {
+        margin-top: 20px;
+    }
+    &__social {
+        margin-top: 20px;
+        width: 135px;
+        display: flex;justify-content: space-between;
+    }
+    &__form {
+        margin-top: 30px;
+        display: grid;
+        grid-template: 45px 190px 45px / repeat(2, 280px);
+        gap: 30px 25px;
+    }
+    &__input {
+        position: relative;
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            font-size: 12px;
+        }
+        label {
+            position: absolute;
+            top: -9px;
+            left: 12px;
+            height: 18px;
+            padding: 0 8px;
+            background-color: #fff;
+            font-size: 12px;
+        }
+    }
+    &__textarea {
+        position: relative;
+        grid-column: 1/3;
+        textarea {
+            width: 100%;
+            height: 100%;
+            resize: none;
+            padding: 20px;
+            font-size: 12px;
+        }
+        label {
+            position: absolute;
+            top: -9px;
+            left: 12px;
+            height: 18px;
+            padding: 0 8px;
+            background-color: #fff;
+            font-size: 12px;
+        }
+    }
+    &__triggers {
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 35px;
+    }
+    &__policy {
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        input {
+            margin-right: 10px;
+        }
+    }
+    &__btn {
+        width: 219px;
+        height: 45px;
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+    }
+}
